@@ -6,6 +6,7 @@ package com.oop;
  *  - Primitives can promote automatically. 
  *  - Inside a class two methods with same method signature is not 
  *    allowed.
+ *  - Var - arg method has least preference.
  */
 public class Parent {
 	 
@@ -28,6 +29,9 @@ public class Parent {
 //	 public final void getObj(StringBuffer sb) {
 //		 System.out.println("StringBuffer - arg");
 //	 }
+	 public void method1(int... x) {
+		 System.out.println("Var - arg");
+	 }
 	 
 	 public static void main(String[] args) {
 		 Parent parent = new Parent();
